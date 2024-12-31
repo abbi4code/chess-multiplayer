@@ -1,5 +1,5 @@
 import { WebSocket } from "ws";
-import { INIT_MSG } from "./Message";
+import { INIT_MSG, MOVE } from "./Message";
 import { Game } from "./Game";
 // interface Game{
 //     player1: WebSocket,
@@ -40,12 +40,18 @@ export class GameManager{
                     this.games.push(game);
 
                     this.pendinguser = null;
-
-
                 }else {
                     this.pendinguser = socket
                 }
             }
+            if(message.type === MOVE){
+                const game = this.games.find(game => game.player1 === socket || game.player2 === socket);
+                if(game){
+                    
+                }
+
+            }
+
         })
     }
 }
