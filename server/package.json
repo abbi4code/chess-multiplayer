@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.2"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -b",
+    "dev": "nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
