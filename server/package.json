@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "chess.js": "^1.0.0",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.2",
+    "ws": "^8.18.0"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -b",
+    "dev": "nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/ws": "^8.5.14"
+  }
+}
