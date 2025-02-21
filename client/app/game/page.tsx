@@ -53,7 +53,7 @@ const Page = () => {
   return (
     <div className='bg-slate-900 flex h-screen w-full'>
         <div className='flex-[2] flex justify-center items-center'>
-        <Chessboard board={board} socket={socket}/>
+        <Chessboard board={board} socket={socket} chess={chess} setBoard={setBoard}/>
         </div>
        <div className='flex-[1] flex justify-start items-center w-full '>
        <Button className='rounded-lg px-5 py-10 font-bold font-serif text-black text-5xl bg-green-800' onClick={() => {

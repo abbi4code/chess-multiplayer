@@ -37,7 +37,7 @@ class GameManager {
                 const game = this.games.find((game) => game.player1 === socket || game.player2 === socket);
                 // ! how to find out which socket move is being added
                 if (game) {
-                    game.makemove(socket, message.move);
+                    game.makemove(socket, message.payload.move);
                 }
             }
         });

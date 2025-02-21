@@ -47,7 +47,7 @@ export class GameManager{
                 
                 // ! how to find out which socket move is being added
                 if(game){
-                    game.makemove(socket, message.move)
+                    game.makemove(socket, message.payload.move)
                 }
             }
 
