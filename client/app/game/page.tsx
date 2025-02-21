@@ -14,9 +14,9 @@ const Page = () => {
     const socket = useSocket();
 
     const [chess,setChess] = useState(new Chess());
-    console.log("chess",chess)
+    // console.log("chess",chess)
     const [board, setBoard] = useState(chess.board());
-    console.log("board.board", chess.board());
+    // console.log("board.board", chess.board());
 
     useEffect(() => {
         if(!socket){
@@ -53,7 +53,7 @@ const Page = () => {
   return (
     <div className='bg-slate-900 flex h-screen w-full'>
         <div className='flex-[2] flex justify-center items-center'>
-        <Chessboard board={board}/>
+        <Chessboard board={board} socket={socket}/>
         </div>
        <div className='flex-[1] flex justify-start items-center w-full '>
        <Button className='rounded-lg px-5 py-10 font-bold font-serif text-black text-5xl bg-green-800' onClick={() => {
